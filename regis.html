@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход</title>
-    <link rel="stylesheet" href="log.css">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="regis.css">
     <link rel="icon" href="profile_3135715.png" type="image/x-icon">
 </head>
 <body>  
@@ -13,7 +13,7 @@
     <div class="container-header">
 
     
-        <div onclick="window.location.href='index.html'" class="logo"><img src="icon.svg"> ablerr</div>
+        <div onclick="window.location.href='index.html'" class="logo" ><img src="icon.svg"> ablerr</div>
         
     
      <div class="container2">
@@ -34,10 +34,14 @@
 
 
     <form>
-        <label>Вход в аккаунт</label>
+        <label>Регистрация</label>
         <div class="logbar">
-            <div class="login-container"> 
-                <input id="login" placeholder="Логин/Email" type="email" autocomplete="off">
+            <div class="email-container"> 
+                <input id="login" placeholder="Логин" type="text" autocomplete="off">
+                
+            </div>
+            <div class="Email-container"> 
+                <input id="login" placeholder="Email" type="email" autocomplete="off">
                 
             </div>
             
@@ -45,20 +49,28 @@
         
             <div class="input-container">
                 <input id="password" placeholder="Пароль" type="password">
-                <!-- <span  onclick="myFunction()" class="image-placeholder"><img class="eye" src="eye_159078.png"></span> -->
+                
                 <span onclick="togglePasswordVisibility()" class="image-placeholder">
                     <img class="eye" src="seen_6497663.png" alt="Показать пароль" data-visible="true">
                     <img class="eye" src="hide_2767146.png" alt="Скрыть пароль" data-visible="false">
                   </span>
               </div>
+              <div class="input-container">
+                <input id="password2" placeholder="Повторный пароль" type="password">
+              
+                <span onclick="togglePasswordVisibility2()" class="image-placeholder">
+                    <img class="eye2" src="seen_6497663.png" alt="Показать пароль" data-visible="true">
+                    <img class="eye2" src="hide_2767146.png" alt="Скрыть пароль" data-visible="false">
+                  </span>
+              </div>
             
         </div>
            
-                <button class="inter"  id=""><p>Войти в систему</p></button>
+                <button class="inter"  id=""><p>Зарегистрироваться</p></button>
                
                
     </form>
 
-<script src="log.js"></script>
+<script src="regis.js"></script>
 </body>
 </html>
